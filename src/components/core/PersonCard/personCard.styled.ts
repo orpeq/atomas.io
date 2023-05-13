@@ -51,10 +51,12 @@ export const Text = styled.h2`
   text-align: center;
   font-weight: ${({ theme }) => theme.fontWeights.light};
   margin: 0;
+  cursor: pointer;
 `
 
 export const Address = styled(Text)`
   margin-bottom: 30px;
+ cursor: initial;
 `
 
 export const Copyright = styled.p`

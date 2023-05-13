@@ -1,4 +1,5 @@
 import { Button } from "../Button/Button"
+import { useState } from "react"
 import {
   Sidebar,
   SidebarHeader,
@@ -10,10 +11,18 @@ import {
   SocialLink,
   Heading,
 } from "./personCard.styled"
-import { MailOutline, GitHub } from "@mui/icons-material"
-
+import { MailOutline, GitHub, LinkedIn, Facebook } from "@mui/icons-material"
+import Tooltip from "@mui/material/Tooltip"
 import Image from "next/image"
+
 const PersonCard = () => {
+  const [isCopied, setIsCopied] = useState(false)
+  const copyToClipboard = () => {
+    const email = "hello@tomas.io"
+    navigator.clipboard.writeText(email)
+    setIsCopied(true)
+  }
+
   return (
     <Sidebar>
       <SidebarHeader>
@@ -27,16 +36,32 @@ const PersonCard = () => {
         height={250}
         alt={"Tomas"}
       />
-      <Text>hello@atomas.io</Text>
+      <Tooltip
+        open={isCopied}
+        onClose={() => setIsCopied(false)}
+        title="Copied to clipboard"
+        placement="bottom"
+      >
+        <Text onClick={copyToClipboard}>hello@atomas.io</Text>
+      </Tooltip>
       <Address>Based in Vilnius, Lithuania</Address>
       <Copyright>&copy; 2023 Atomas. All Rights Reserved</Copyright>
       <SocialProfile>
-        <SocialLink href="">
+        <SocialLink
+          href="https://www.linkedin.com/in/tomas-antanaitis-2b2785171/"
+          target="_blank"
+        >
+          <LinkedIn />
+        </SocialLink>
+        <SocialLink
+          href="https://www.facebook.com/tomas.antanaitis.10"
+          target="_blank"
+        >
+          <Facebook />
+        </SocialLink>
+        <SocialLink href="https://github.com/orpeq" target="_blank">
           <GitHub />
         </SocialLink>
-        <SocialLink href=""></SocialLink>
-        <SocialLink href=""></SocialLink>
-        <SocialLink href=""></SocialLink>
       </SocialProfile>
       <Button variant={"primary"}>
         <MailOutline />
