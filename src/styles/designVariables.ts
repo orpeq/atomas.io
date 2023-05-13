@@ -1,6 +1,7 @@
 export const colors = {
   primary: {
-    background: "#fff",
+    background: "#1A1A1A",
+    text: "#FFFFFF",
   },
   boxShadow: {
     primary: "0 13px 99px rgba(0, 0, 0, 0.08);",
