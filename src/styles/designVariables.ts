@@ -1,6 +1,7 @@
 export const colors = {
   primary: {
     background: "#1A1A1A",
+    accentColor: "#28e98c",
     text: "#FFFFFF",
   },
   boxShadow: {
