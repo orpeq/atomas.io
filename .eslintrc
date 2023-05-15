@@ -105,9 +105,6 @@
   "overrides": [
     {
       "files": ["src/pages/**/*"],
-      "rules": {
-        "import/no-unused-modules": 0
-      }
     }
   ]
 }
