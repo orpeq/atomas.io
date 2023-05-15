@@ -5,6 +5,10 @@ import {
   MainContainer,
   Span,
   Paragraph,
+  Numbers,
+  Number,
+  NumberValue,
+  NumberLabel,
 } from "./content.styled"
 
 const Content = () => {
@@ -20,6 +24,17 @@ const Content = () => {
             eye for design. I specialize in crafting visually stunning and
             user-friendly web experiences.
           </Paragraph>
+
+          <Numbers>
+            <Number>
+              <NumberValue>2</NumberValue>
+              <NumberLabel>Years of Experience</NumberLabel>
+            </Number>
+            <Number>
+              <NumberValue>30</NumberValue>
+              <NumberLabel>Projects completed</NumberLabel>
+            </Number>
+          </Numbers>
         </MainContent>
       </MainContainer>
     </HeroSection>
