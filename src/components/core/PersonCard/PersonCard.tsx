@@ -42,7 +42,7 @@ const PersonCard = () => {
         title="Copied to clipboard"
         placement="bottom"
       >
-        <Text onClick={copyToClipboard}>hello@atomas.io</Text>
+        <Text onClick={copyToClipboard}>hi@atomas.io</Text>
       </Tooltip>
       <Address>Based in Vilnius, Lithuania</Address>
       <Copyright>&copy; 2023 Atomas. All Rights Reserved</Copyright>

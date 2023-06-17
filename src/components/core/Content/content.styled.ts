@@ -26,6 +26,13 @@ export const Heading = styled.h1`
   font-weight: 400;
 `
 
+export const Subtitle = styled.p`
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 500px;
+  margin: 0 0 16px;
+`
+
 export const Span = styled.span`
   font-size: ${({ theme }) => theme.fontSizes.h1};
   color: ${({ theme }) => theme.colors.primary.accentColor};
