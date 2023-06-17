@@ -18,7 +18,7 @@ import Image from "next/image"
 const PersonCard = () => {
   const [isCopied, setIsCopied] = useState(false)
   const copyToClipboard = () => {
-    const email = "hello@tomas.io"
+    const email = "hi@atomas.io"
     navigator.clipboard.writeText(email)
     setIsCopied(true)
   }
