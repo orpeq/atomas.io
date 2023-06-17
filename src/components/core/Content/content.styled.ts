@@ -48,30 +48,17 @@ export const Paragraph = styled.p`
   width: 100%;
   font-weight: 500;
 `
-
-export const Numbers = styled.div`
-  margin-top: 150px;
-  display: flex;
-  flex-direction: row;
-  gap: 70px;
-`
-export const Number = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-export const NumberValue = styled.p`
-  font-size: 72px;
-  color: ${({ theme }) => theme.colors.primary.accentColor};
-  line-height: 56px;
-  margin-bottom: 38px;
-`
-export const NumberLabel = styled.p`
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  scroll-behavior: smooth;
-  color: #999999;
-
-  line-height: 1.7;
-  overflow-x: hidden;
-  height: 100vh;
+export const Label = styled.div`
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  border: 1px solid #565656;
+  padding: 9px 20px;
+  border-radius: 30px;
+  margin-bottom: 53px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 24px;
 `

@@ -5,6 +5,7 @@ import {
   MainContainer,
   Span,
   Subtitle,
+  Label,
 } from "./content.styled"
 
 const Content = () => {
@@ -19,6 +20,7 @@ const Content = () => {
             Currently looking for Junior/Mid JavaScript roles with focus on
             <strong> ReactJS</strong>.
           </Subtitle>
+          <Label>Languages and Frameworks</Label>
         </MainContent>
       </MainContainer>
     </HeroSection>
